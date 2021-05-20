@@ -1,0 +1,61 @@
+<div class="p-grid">
+    <div class="p-col-2"></div>
+    <div class="p-col-8">
+        <div class="p-d-flex p-jc-center" style="height: 97vh">
+            <div class="p-mr-1 p-as-center">
+                <form [formGroup]="registrationForm">
+                    <div class="p-field p-grid">
+                        <label for="name" [ngClass]="{ 'p-invalid required-star': this.registrationForm.get('name')?.invalid }" class="p-col-fixed registration-label">Imię:</label>
+                        <div class="p-col">
+                            <input formControlName="name" pInputText type="text" placeholder="Wpisz" [style]="{ width: '100%' }" id="name" class="p-inputtext-sm">
+                        </div>
+                    </div>
+                    <div class="p-field p-grid">
+                        <label for="surname" [ngClass]="{ 'p-invalid required-star': this.registrationForm.get('surname')?.invalid }" class="p-col-fixed registration-label">Nazwisko:</label>
+                        <div class="p-col">
+                            <input formControlName="surname" pInputText type="text" placeholder="Wpisz" [style]="{ width: '100%' }" id="surname" class="p-inputtext-sm">
+                        </div>
+                    </div>
+                    <div class="p-field p-grid">
+                        <label for="phoneNumber" [ngClass]="{ 'p-invalid required-star': this.registrationForm.get('phoneNumber')?.invalid }" class="p-col-fixed registration-label">Numer telefonu:</label>
+                        <div class="p-col">
+                            <input formControlName="phoneNumber" pInputText type="text" placeholder="Wpisz" [style]="{ width: '100%' }" id="phoneNumber" class="p-inputtext-sm">
+                        </div>
+                    </div>
+                    <div class="p-field p-grid">
+                        <label for="dateOfBirth" [ngClass]="{ 'p-invalid required-star': this.registrationForm.get('dateOfBirth')?.invalid }" class="p-col-fixed registration-label">Data urodzenia:</label>
+                        <div class="p-col">
+                            <p-calendar formControlName="dateOfBirth" dateFormat="yy-mm-dd" placeholder="Wybierz" [style]="{ width: '100%' }" id="dateOfBirth" class="p-inputtext-sm"></p-calendar>
+                        </div>
+                    </div>
+                    <div class="p-field p-grid">
+                        <label for="currentPayment" [ngClass]="{ 'p-invalid required-star': this.registrationForm.get('currentPayment')?.invalid }" class="p-col-fixed registration-label">Aktualne wynagrodzenie:</label>
+                        <div class="p-col">
+                            <input formControlName="currentPayment" pInputText type="text" placeholder="Wpisz" [style]="{ width: '100%' }" id="currentPayment" class="p-inputtext-sm">
+                        </div>
+                    </div>
+                    <div class="p-field p-grid">
+                        <label for="email" [ngClass]="{ 'p-invalid required-star': this.registrationForm.get('email')?.invalid }" class="p-col-fixed registration-label">Email:</label>
+                        <div class="p-col">
+                            <input formControlName="email" pInputText type="text" placeholder="Wpisz" [style]="{ width: '100%' }" id="email" class="p-inputtext-sm">
+                        </div>
+                    </div>
+                    <div class="p-field p-grid">
+                        <label for="password" [ngClass]="{ 'p-invalid required-star': this.registrationForm.get('password')?.invalid }" class="p-col-fixed registration-label">Hasło:</label>
+                        <div class="p-col">
+                            <p-password formControlName="password" [style]="{ width: '100%' }" id="password" class="p-inputtext-sm"></p-password>
+                        </div>
+                    </div>
+                    <div class="p-field p-grid">
+                        <label for="repeatPassword" [ngClass]="{ 'p-invalid required-star': this.registrationForm.get('repeatPassword')?.invalid }" class="p-col-fixed registration-label">Powtórz hasło:</label>
+                        <div class="p-col">
+                            <p-password formControlName="repeatPassword" [style]="{ width: '100%' }" id="repeatPassword" class="p-inputtext-sm"></p-password>
+                        </div>
+                    </div>
+                    <button pButton label="Załóż konto" [style]="{ width: '100%' }" class="p-button-sm"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="p-col-2"></div>
+</div>

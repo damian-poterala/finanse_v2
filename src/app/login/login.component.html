@@ -1,1 +1,39 @@
-<p>login works!</p>
+<div class="p-grid">
+    <div class="p-col-5">
+        <div class="p-d-flex p-jc-center" style="height: 97vh">
+            <div class="p-mr-1 p-as-center">
+                <form [formGroup]="loginForm">
+                    <div class="p-fluid">
+                        <div class="p-field">
+                            <label for="login">Login:</label>
+                            <input formControlName="login" pInputText type="text" [style]="{ width: '100%' }" class="p-inputtext-sm" id="login">
+                        </div>
+                        <div class="p-field">
+                            <label for="password">Hasło:</label>
+                            <p-password formControlName="password" [style]="{ width: '100%' }" class="p-inputtext-sm" id="password"></p-password>
+                        </div>
+                        <div class="p-field">
+                            <button pButton label="Zaloguj się" (click)="signIn()" [style]="{ width: '100%' }" class="p-button-sm"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="p-col-2">
+        <p-divider layout="vertical">
+            LUB
+        </p-divider>
+    </div>
+    <div class="p-col-5">
+        <div class="p-d-flex p-jc-center" style="height: 97vh">
+            <div class="p-mr-1 p-as-center">
+                <div class="p-fluid">
+                    <div class="p-field">
+                        <button pButton label="Załóż konto" routerLink="/registration" [style]="{ width: '100%' }" class="p-button-sm"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

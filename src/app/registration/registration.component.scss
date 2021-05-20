@@ -1,0 +1,11 @@
+.registration-label {
+    width: 100px;
+}
+
+.p-invalid {
+    color: red;
+}
+
+.required-star::before {
+    content: '* ';
+}
