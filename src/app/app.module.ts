@@ -11,7 +11,7 @@ import { InputTextModule   } from 'primeng/inputtext';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { PasswordModule    } from 'primeng/password';
 import { DividerModule     } from 'primeng/divider';
-
+import { MenuModule        } from 'primeng/menu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +21,7 @@ import { MainViewComponent } from './main-view/main-view.component';
 import { AddingSalaryComponent } from './adding-salary/adding-salary.component';
 import { EditSalaryComponent } from './edit-salary/edit-salary.component';
 import { DiagramsComponent } from './diagrams/diagrams.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DiagramsComponent } from './diagrams/diagrams.component';
     MainViewComponent,
     AddingSalaryComponent,
     EditSalaryComponent,
-    DiagramsComponent
+    DiagramsComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +48,7 @@ import { DiagramsComponent } from './diagrams/diagrams.component';
     InputNumberModule,
     PasswordModule,
     DividerModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
