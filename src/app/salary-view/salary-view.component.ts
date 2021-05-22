@@ -30,4 +30,15 @@ export class SalaryViewComponent implements OnInit {
     });
   }
 
+
+  /** events buttons */
+
+  editPayment(id: number) {
+
+  }
+
+  deletePayment(id: number) {
+
+  }
+
 }

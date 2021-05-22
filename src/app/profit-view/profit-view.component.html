@@ -1,0 +1,33 @@
+<p-table [value]="profitList">
+    <ng-template pTemplate="header">
+        <tr>
+            <th class="th-style">Lp.</th>
+            <th class="th-style">Miesiąc</th>
+            <th class="th-style">Rok</th>
+            <th class="th-style">Wynagrodzenie</th>
+            <th class="th-style">Kategoria</th>
+            <th class="th-style">Osoba</th>
+            <th class="th-style">Opcje</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-item let-rowIndex="rowIndex">
+        <tr>
+            <td class="td-style">{{ rowIndex + 1 }}.</td>
+            <td class="td-style">{{ item.month }}</td>
+            <td class="td-style">{{ item.year }}</td>
+            <td class="td-style">{{ item.amount }}</td>
+            <td class="td-style">{{ item.profit_category }}</td>
+            <td class="td-style">{{ item.user }}</td>
+            <td class="td-style">
+                <div class="p-grid">
+                    <div class="p-col-6">
+                        <button pButton (click)="editProfit(item.id)" label="Edytuj" [style]="{ width: '100%' }" class="p-button-sm"></button>
+                    </div>
+                    <div class="p-col-6">
+                        <button pButton (click)="deleteProfit(item.id)" label="Usuń" [style]="{ width: '100%' }" class="p-button-sm p-button-danger"></button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>

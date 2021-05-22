@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   paymentUrl: 'http://localhost/api_finanse',
+  profitUrl : 'http://localhost/api_finanse',
   settingUrl: 'http://localhost/api_finanse',
 };
 

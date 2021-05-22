@@ -5,36 +5,31 @@
     <div class="p-col-10">
         <div class="p-grid">
             <div class="p-col-12">
-                <div class="p-grid">
-                    <div class="p-col-4">
-                        <button pButton (click)="openModalAddPayment()" icon="pi pi-plus" label="Dodaj wypłatę" [style]="{ width: '100%' }" class="p-button-sm"></button>
-                    </div>
-                    <div class="p-col-4">
-                        <button pButton  (click)="openModalAddExpense()" icon="pi pi-plus" label="Dodaj wydatek" [style]="{ width: '100%' }" class="p-button-sm"></button>
-                    </div>
-                    <div class="p-col-4">
-                        <button pButton  (click)="openModalAddProfit()" icon="pi pi-plus" label="Dodaj przychód" [style]="{ width: '100%' }" class="p-button-sm"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="p-col-12">
                 <p-panel header="Wykresy">
 
                 </p-panel>
             </div>
             <div class="p-col-12">
                 <p-panel header="Wypłaty">
+                    <ng-template pTemplate="icons">
+                        <button pButton (click)="openModalAddPayment()" icon="pi pi-plus" pTooltip="Dodaj nową wypłatę." tooltipPosition="bottom" class="p-button-sm"></button>
+                    </ng-template>
                     <app-salary-view></app-salary-view>
                 </p-panel>
             </div>
             <div class="p-col-12">
                 <p-panel header="Wydatki">
-
+                    <ng-template pTemplate="icons">
+                        <button pButton (click)="openModalAddExpense()" icon="pi pi-plus" pTooltip="Dodaj nowy wydatek." tooltipPosition="bottom" class="p-button-sm"></button>
+                    </ng-template>
                 </p-panel>
             </div>
             <div class="p-col-12">
                 <p-panel header="Przychody">
-
+                    <ng-template pTemplate="icons">
+                        <button pButton (click)="openModalAddProfit()" icon="pi pi-plus" pTooltip="Dodaj nowy przychód." tooltipPosition="bottom" class="p-button-sm"></button>
+                    </ng-template>
+                    <app-profit-view></app-profit-view>
                 </p-panel>
             </div>
         </div>

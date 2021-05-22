@@ -1,1 +1,21 @@
-<p>adding-salary works!</p>
+<form [formGroup]="paymentForm">
+    <div class="p-grid">
+        <div class="p-col-12">
+            <div class="p-field p-grid">
+                <label for="month" class="p-col-fixed label">Miesiąc:</label>
+                <div class="p-col">
+                    <p-dropdown formControlName="month" [options]="monthsListing" optionLabel="month_name" placeholder="Wybierz" [style]="{ width: '100%' }" id="month" class="p-inputtext-sm" appendTo="body"></p-dropdown>
+                </div>
+            </div>
+            <div class="p-field p-grid">
+                <label for="amount" class="p-col-fixed label">Wynagrodzenie:</label>
+                <div class="p-col">
+                    <input pInputText formControlName="amount" type="text" placeholder="Wpisz" [style]="{ width: '100%' }" id="month" class="p-inputtext-sm">
+                </div>
+            </div>
+            <div class="p-field p-grid">
+                <button pButton (click)="savePayment()" label="Zapisz" [style]="{ width: '100%' }" class="p-button-sm"></button>
+            </div>
+        </div>
+    </div>
+</form>
