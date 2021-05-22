@@ -42,7 +42,7 @@
 </div>
 
 <p-dialog header="Dodaj wypłatę" (onHide)="closeModalAddPayment()" [(visible)]="displayAddPayment" [style]="{ width: '30vw' }" [modal]="true">
-
+    <app-adding-salary *ngIf="displayAddPayment == true"></app-adding-salary>
 </p-dialog>
 <p-dialog header="Dodaj wydatek" (onHide)="closeModalAddExpense()" [(visible)]="displayAddExpense" [style]="{ width: '30vw' }" [modal]="true">
 

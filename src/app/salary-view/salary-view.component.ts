@@ -22,7 +22,7 @@ export class SalaryViewComponent implements OnInit {
 
   getHelperPaymentsList() {
     this.paymentResourceService.getPaymentsList().subscribe((data: any) => {
-      this.paymentsList = data['records'];
+      this.paymentsList = data["records"];
       
       console.log("%c Payments list: ", "color: #338333", this.paymentsList);
     }, (error: any) => {

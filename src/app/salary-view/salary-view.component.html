@@ -1,20 +1,20 @@
 <p-table [value]="paymentsList">
     <ng-template pTemplate="header">
         <tr>
-            <th>Lp.          </th>
-            <th>Rok          </th>
-            <th>Miesiąc      </th>
-            <th>Osoba        </th>
-            <th>Wynagrodzenie</th>
+            <th class="th-style">Lp.          </th>
+            <th class="th-style">Rok          </th>
+            <th class="th-style">Miesiąc      </th>
+            <th class="th-style">Osoba        </th>
+            <th class="th-style">Wynagrodzenie</th>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-item let-rowIndex="rowIndex">
         <tr>
-            <td>{{ rowIndex + 1 }}.</td>
-            <td>{{ item.year    }}</td>
-            <td>{{ item.month   }}</td>
-            <td>{{ item.user    }}</td>
-            <td>{{ item.amount  }}</td>
+            <td class="td-style">{{ rowIndex + 1 }}.</td>
+            <td class="td-style">{{ item.year    }}</td>
+            <td class="td-style">{{ item.month   }}</td>
+            <td class="td-style">{{ item.user    }}</td>
+            <td class="td-style">{{ item.amount  }}</td>
         </tr>
     </ng-template>
 </p-table>
