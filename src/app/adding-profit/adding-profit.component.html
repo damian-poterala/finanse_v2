@@ -1,1 +1,30 @@
-<p>adding-profit works!</p>
+<form>
+    <div class="p-grid">
+        <div class="p-col-12">
+            <div class="p-field p-grid">
+                <label for="month" class="p-col-fixed label">Miesiąc: </label>
+                <div class="p-col">
+                    <p-dropdown placeholder="Wybierz" [style]="{ width: '100%' }" id="month" class="p-inputtext-sm" appendTo="body"></p-dropdown>
+                </div>
+            </div>
+            <div class="p-field p-grid">
+                <label for="amount" class="p-col-fixed label">Wynagrodzenie: </label>
+                <div class="p-col">
+                    <input pInputText type="text" placeholder="Wpisz" [style]="{ width: '100%' }" id="amount" class="p-inputtext-sm">
+                </div>
+            </div>
+            <div class="p-field p-grid">
+                <label for="currency" class="p-col-fixed label">Waluta: </label>
+                <div class="p-col">
+                    <p-dropdown placeholder="Wybierz" [style]="{ width: '100%' }" id="currency" class="p-inputtext-sm" appendTo="body"></p-dropdown>
+                </div>
+            </div>
+            <div class="p-field p-grid">
+                <label for="category" class="p-col-fixed label">Kategoria: </label>
+                <div class="p-col">
+                    <p-dropdown placeholder="Wybierz" [style]="{ width: '100%' }" id="category" class="p-inputtext-sm" appendTo="body"></p-dropdown>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

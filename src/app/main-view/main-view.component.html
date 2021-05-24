@@ -20,14 +20,14 @@
             <div class="p-col-12">
                 <p-panel header="Wydatki">
                     <ng-template pTemplate="icons">
-                        <button pButton (click)="openModalAddExpense()" icon="pi pi-plus" pTooltip="Dodaj nowy wydatek." tooltipPosition="bottom" class="p-button-sm"></button>
+                        <button pButton (click)="openModalAddExpense()" icon="pi pi-plus" pTooltip="Dodaj nowy wydatek." tooltipPosition="bottom" class="p-button-sm button-style"></button>
                     </ng-template>
                 </p-panel>
             </div>
             <div class="p-col-12">
                 <p-panel header="Przychody">
                     <ng-template pTemplate="icons">
-                        <button pButton (click)="openModalAddProfit()" icon="pi pi-plus" pTooltip="Dodaj nowy przychód." tooltipPosition="bottom" class="p-button-sm"></button>
+                        <button pButton (click)="openModalAddProfit()" icon="pi pi-plus" pTooltip="Dodaj nowy przychód." tooltipPosition="bottom" class="p-button-sm button-style"></button>
                     </ng-template>
                     <app-profit-view></app-profit-view>
                 </p-panel>
@@ -42,6 +42,6 @@
 <p-dialog header="Dodaj wydatek" (onHide)="closeModalAddExpense()" [(visible)]="displayAddExpense" [style]="{ width: '30vw' }" [modal]="true">
 
 </p-dialog>
-<p-dialog header="Dodaj przychód" (onHide)="closeModalAddProfit()" [(visible)]="displayAddProfit" [style]="{ width: '30vw' }" [modal]="true">
-
+<p-dialog header="Dodaj przychód" (onHide)="closeModalAddProfit()" [(visible)]="displayAddProfit" [style]="{ width: '50vw' }" [modal]="true">
+    <app-adding-profit *ngIf="displayAddProfit"></app-adding-profit>
 </p-dialog>

@@ -1,0 +1,16 @@
+.label {
+    font-size: 10px;
+    width: 120px;
+}
+
+#month {
+    font-size: 10px;
+}
+
+#amount {
+    font-size: 10px;
+}
+
+:host ::ng-deep .p-button .p-button-sm {
+    font-size: 10px;
+}
